@@ -2,7 +2,7 @@
 layout: post
 title: "My First Blog Post"
 author: "Youkai Princess"
-date: 2025-08-06 10:00:00 -0300
+date: 2025-04-06 10:00:00 -0300
 categories: [Jekyll, Web Dev]
 featured_image: "/assets/images/blog-1.jpg"
 ---

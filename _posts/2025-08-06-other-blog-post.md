@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Blog Post"
+title: "Other Blog Post"
 author: "Youkai Princess"
 date: 2025-08-06 10:00:00 -0300
 categories: [Jekyll, Web Dev]
