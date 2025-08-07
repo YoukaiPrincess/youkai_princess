@@ -1,0 +1,10 @@
+about:
+  title: "About Me"
+  content: |
+    Hello! My name is Youkai Princess. I am a passionate developer and artist. I love creating things, whether it's code, music, or art. This is my personal space on the web to share my work and thoughts.
+
+projects:
+  - title: "Project One"
+    description: "A brief description of your first project. Talk about the technologies used and what the project does."
+  - title: "Project Two"
+    description: "A brief description of your second project. This is a great place to link to your GitHub repository or a live demo."
