@@ -6,9 +6,23 @@
     <title>Blog | Youkai Princess</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body> <!-- the "class=scrolled" made a bug causing the footer to stay expanded -->
 
     <header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="content-wrapper">
+      <header>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
@@ -86,8 +100,18 @@
     </div>
     <p>&copy; 2025 Youkai Princess. All rights reserved.</p>
 </footer>
+    </div>
 
+    <footer>
+    <div class="social-links">
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        <a href="https://twitter.com/your-username" target="_blank">Twitter</a>
+        <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 Youkai Princess. All rights reserved.</p>
+</footer>
     <script src="/assets/js/portfolio.js"></script>
     <script src="/assets/js/main.js"></script>
+
 </body>
 </html>

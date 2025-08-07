@@ -55,9 +55,9 @@ header.scrolled {
 section {
     padding: 2em;
     margin: 2em auto;
-    max-width: 800px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    background-color: transparent; /* Sections inside the wrapper don't need their own background */
+    box-shadow: none; /* Sections inside the wrapper don't need their own box-shadow */
 }
 
 .project {
@@ -95,6 +95,24 @@ footer {
 
 #portfolio-carousel, #portfolio-gallery {
     text-align: center;
+}
+
+#portfolio-carousel {
+    background-color: #4b0082; /* Dark purple */
+    padding: 2em; /* Add some padding to give the background space */
+    border-radius: 8px;
+    color: white; /* Make the text white for better contrast */
+}
+
+#portfolio-gallery {
+    background-color: #8b008b; /* Dark pink */
+    padding: 2em;
+    border-radius: 8px;
+    color: white;
+}
+
+#portfolio-gallery h2 {
+    color: white; /* Ensure the heading is white */
 }
 
 /* Carousel */
@@ -284,5 +302,24 @@ footer {
     color: #8fbcbb; /* A cyan-like color for meta info */
     display: block;
     margin-bottom: 1em;
+}
+
+/* --- Content Wrapper Styles --- */
+
+.content-wrapper {
+  max-width: 1200px; /* Adjust this value to set the maximum width of your content */
+  margin: 0 auto;    /* Centers the container horizontally */
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 2em;
+  min-height: calc(100vh - 150px); /* Adjust to prevent the footer from overlapping */
+}
+
+.gallery-item {
+    background-color: #add8e6; /* Light blue */
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
