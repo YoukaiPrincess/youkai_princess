@@ -8,6 +8,15 @@
 </head>
 <body> <!-- the "class=scrolled" made a bug causing the footer to stay expanded -->
 
+    <div class="animated-background"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="cloudy-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" result="turbulence" />
+            <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="20" />
+        </filter>
+    </svg>
+
     {% include header.html %}
 
     <div class="content-wrapper">

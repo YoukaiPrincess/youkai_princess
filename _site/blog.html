@@ -8,6 +8,15 @@
 </head>
 <body> <!-- the "class=scrolled" made a bug causing the footer to stay expanded -->
 
+    <div class="animated-background"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="cloudy-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" result="turbulence" />
+            <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="20" />
+        </filter>
+    </svg>
+
     <header>
     <nav>
         <ul>
@@ -22,26 +31,12 @@
 </header>
 
     <div class="content-wrapper">
-      <header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/portfolio.html">Portfolio</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="blog-posts">
+      <section id="blog-posts">
   <h2>My Blog</h2>
   <div class="post-grid">
     
-      <div class="post-card">
+      <div class="post-card" style="--featured-image: url('/assets/images/blog-1.jpg');">
         <a href="/jekyll/web%20dev/2025/08/06/second-blog-post.html">
-          <img src="/assets/images/blog-1.jpg" alt="My Second Blog Post">
           <h3>My Second Blog Post</h3>
         </a>
         <p class="post-meta">
@@ -49,9 +44,8 @@
         </p>
       </div>
     
-      <div class="post-card">
+      <div class="post-card" style="--featured-image: url('/assets/images/blog-1.jpg');">
         <a href="/jekyll/web%20dev/2025/08/06/other-blog-post.html">
-          <img src="/assets/images/blog-1.jpg" alt="Other Blog Post">
           <h3>Other Blog Post</h3>
         </a>
         <p class="post-meta">
@@ -59,9 +53,8 @@
         </p>
       </div>
     
-      <div class="post-card">
+      <div class="post-card" style="--featured-image: url('/assets/images/blog-1.jpg');">
         <a href="/jekyll/web%20dev/2025/07/16/first-post.html">
-          <img src="/assets/images/blog-1.jpg" alt="First Post">
           <h3>First Post</h3>
         </a>
         <p class="post-meta">
@@ -69,9 +62,8 @@
         </p>
       </div>
     
-      <div class="post-card">
+      <div class="post-card" style="--featured-image: url('/assets/images/blog-1.jpg');">
         <a href="/jekyll/web%20dev/2025/07/08/posting-shit.html">
-          <img src="/assets/images/blog-1.jpg" alt="Posting Shit">
           <h3>Posting Shit</h3>
         </a>
         <p class="post-meta">
@@ -79,9 +71,8 @@
         </p>
       </div>
     
-      <div class="post-card">
+      <div class="post-card" style="--featured-image: url('/assets/images/blog-1.jpg');">
         <a href="/jekyll/web%20dev/2025/04/06/first-blog-post.html">
-          <img src="/assets/images/blog-1.jpg" alt="My First Blog Post">
           <h3>My First Blog Post</h3>
         </a>
         <p class="post-meta">
@@ -91,15 +82,6 @@
     
   </div>
 </section>
-
-<footer>
-    <div class="social-links">
-        <a href="https://github.com/your-username" target="_blank">GitHub</a>
-        <a href="https://twitter.com/your-username" target="_blank">Twitter</a>
-        <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
-    </div>
-    <p>&copy; 2025 Youkai Princess. All rights reserved.</p>
-</footer>
     </div>
 
     <footer>
